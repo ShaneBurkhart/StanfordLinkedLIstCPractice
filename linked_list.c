@@ -11,13 +11,13 @@ void push(Node** head, int data)
   *head = t;
 }
 
-void removeNode(Node** head, Node** node)
+void removeNode(Node** head, Node* node)
 {
   if(*head == NULL) return;
   Node* t = *head;
-  printf("%d\n", *node);
+  printf("%d\n", node);
   printf("%d\n", t);
-  while(t != NULL && t != *node)
+  while(t != NULL && t != node)
   {
     t = t->next;
     printf("%d\n", t);

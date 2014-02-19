@@ -18,7 +18,7 @@ int main(){
   printf("Append length: %d\n", length(head));
 
   printf("Head value: %d\n", head->data);
-  removeNode(&head, &head);
+  removeNode(&head, head);
   printf("Removed length: %d\n", length(head));
   printf("Head value: %d\n", head->data);
 

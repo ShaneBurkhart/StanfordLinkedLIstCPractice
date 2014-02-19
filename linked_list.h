@@ -10,4 +10,4 @@ void appendNode(Node* head, int data);
 Node* last(Node* head);
 int length(Node* head);
 
-void removeNode(Node** head, Node** node);
+void removeNode(Node** head, Node* node);
