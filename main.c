@@ -11,13 +11,16 @@ int main(){
 
   printf("Initial length: %d\n", length(head));
 
-  push(&head, 10);
+  push(&head, 11);
   printf("Push length: %d\n", length(head));
 
-  appendNode(head, 10);
+  appendNode(head, 1);
   printf("Append length: %d\n", length(head));
 
-
+  printf("Head value: %d\n", head->data);
+  removeNode(&head, &head);
+  printf("Removed length: %d\n", length(head));
+  printf("Head value: %d\n", head->data);
 
   return 0;
 }
